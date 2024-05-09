@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Hello , wellcome to home page</h1>
+    <!-- <h1>Hello {{name}} and your mobile no is {{phno}}</h1> -->
+    <!-- {% for item in EO %}
+    
+    
+    <h1>name : {{item.name}} phno : {{item.phno}}</h1>
+    
+    {% endfor %} -->
+    <table border="3px">
+        <tr>
+            <th>Emp name</th>
+            <th>Emp phno</th>
+            <th>Emp email</th>
+            <th>Emp add</th>
+        </tr>
+        {% for emp in EmployeeObjects %}
+        <tr>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.phno}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.add}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    </center>
+</body>
+</html>
